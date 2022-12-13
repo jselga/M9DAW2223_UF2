@@ -1,3 +1,4 @@
+@use "mixins";
 $text-color: #3f3f3f;
 body{
     padding: 0;
@@ -10,10 +11,10 @@ body{
 }
 h1{
     margin: 0;
-   @include format-text();
+    @include mixins.format-text();
 }
 p{
-    @include format-text(#666666);
+    @include mixins.format-text(#666666);
 }
 .llistat{
     width: 10rem;
