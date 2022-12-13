@@ -1,0 +1,17 @@
+$bg-color: #96c48c;
+$text-color: #3f3f3f;
+@mixin format-text($bg-color: #f1f1f1) {
+    width: 50rem;
+    color: $text-color;
+    text-transform: uppercase;
+    background-color: $bg-color;
+}
+h1{
+    @include format-text(#666666);
+    padding: 0.5rem;
+}
+
+p{
+    background-color: $bg-color;
+    color: $text-color;
+}

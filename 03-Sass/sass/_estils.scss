@@ -11,7 +11,7 @@ body{
 }
 h1{
     margin: 0;
-   @include mixins.format-text();
+    @include mixins.format-text();
 }
 p{
     @include mixins.format-text(#666666);
